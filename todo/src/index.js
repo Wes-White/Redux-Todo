@@ -4,9 +4,10 @@ import "./index.css";
 import App from "./App";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
+import { reducer } from './reducers/index';
 
-ReactDOM.render(<App />, document.getElementById('root'));
-const store = createStore(() => {});
+
+const store = createStore(reducer)
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
